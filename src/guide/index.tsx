@@ -7,4 +7,4 @@ export { InputGuide } from '@/guide/Input';
 export { TooltipGuide } from '@/guide/Tooltip';
 export { AlertGuide } from '@/guide/Alert';
 export { SelectGuide } from '@/guide/Select';
-export { ButtonSelectGuide } from '@/guide/ButtonSelect';
+export { BottomSheetGuide } from '@/guide/BottomSheet';

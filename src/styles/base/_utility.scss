@@ -1,8 +1,8 @@
 // 가급적이면 사용 최소화 하도록 할 것.
 
-// .a11y-hidden {
-//   @include mix.a11y-hidden();
-// }
+.a11y-hidden {
+    @include mix.a11y-hidden();
+}
 
 // .clear-fix {
 //     @include clear-fix;

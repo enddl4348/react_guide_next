@@ -15,4 +15,4 @@ export { Tooltip } from '@/components/Tooltip';
 export { TooltipGroup } from '@/components/TooltipGroup';
 export { SelectBox } from '@/components/Select';
 export { Alert } from '@/components/Alert';
-export { ButtonSelect } from '@/components/ButtonSelect';
+export { BottomSheet } from '@/components/BottomSheet';
