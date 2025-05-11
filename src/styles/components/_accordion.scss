@@ -1,0 +1,100 @@
+.accordion {
+    &__btn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    &__head {
+        padding: 1.6rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #ddd;
+    }
+    &__tit-box {
+        display: inline-flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    &__tit-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+        transform: translateY(-0.15rem);
+    }
+    &__tit {
+        color: #111;
+        font-weight: 500;
+    }
+    &__tit--small {
+        color: #333;
+        font-weight: 500;
+    }
+    &__arrow {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        margin-left: 2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__arrow-icon {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+    }
+
+    // box type
+    &--box {
+        border: 1px solid #ddd;
+        border-radius: 0.6rem;
+    }
+    &--box &__head {
+        padding: 2.4rem 2rem;
+        border-top: none;
+    }
+    &--box &__body {
+        padding: 0 2rem 2.4rem 2rem;
+    }
+
+    &--box &__panel {
+        padding: 0 2rem 2rem;
+    }
+
+    // open
+    &__btn.isOpen &__arrow-icon {
+        transform: rotate(180deg);
+    }
+
+    &__panel--aniMode {
+        overflow: hidden;
+        display: none;
+        height: 0;
+    }
+    &__panel-box {
+        padding: 2rem;
+        background-color: #f2f5f7;
+        border-radius: 0.8rem;
+    }
+
+    &--noBorder {
+        border: none;
+    }
+    &--split &__item {
+        margin-top: 1.4rem;
+        border: 1px solid #e1e3e5;
+        box-shadow:
+            0px 1px 16px 0px rgba(33, 37, 41, 0.04),
+            0px 6px 10px 0px rgba(33, 37, 41, 0.02);
+        border-radius: 0.6rem;
+    }
+    &--split &__item:first-child {
+        margin-top: 0;
+    }
+    &--split.accordion--box {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}

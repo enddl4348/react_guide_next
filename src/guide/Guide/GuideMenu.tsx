@@ -16,12 +16,12 @@ export default function GuideMenu({ className }: GuideMenuProps) {
         { title: 'Tooltip', path: '/tooltip', id: 6 },
         { title: 'Select', path: '/select', id: 7 },
         { title: 'Alert', path: '/alert', id: 8 },
-        { title: 'BottomSheet', path: '/BottomSheet', id: 9 },
-        { title: 'LayerPopup', path: '/LayerPopup', id: 10 },
-        { title: 'Tab', path: '/Tab', id: 11 },
-        { title: 'Accordion', path: '/Accordion', id: 12 },
-        { title: 'Table', path: '/Table', id: 13 },
-        { title: 'ToastPopup', path: '/ToastPopup', id: 14 },
+        { title: 'BottomSheet', path: '/bottomSheet', id: 9 },
+        { title: 'Tab', path: '/tab', id: 10 },
+        // { title: 'LayerPopup', path: '/layerPopup', id: 11 },
+        { title: 'Accordion', path: '/accordion', id: 12 },
+        // { title: 'Table', path: '/table', id: 13 },
+        { title: 'ToastPopup', path: '/toastPopup', id: 14 },
     ];
 
     const menuList = componentList.map((menu) => {
@@ -31,8 +31,7 @@ export default function GuideMenu({ className }: GuideMenuProps) {
                     className={cn('guide-gnb__link', menu.mainClass)}
                     href={menu.path}
                 >
-                    {' '}
-                    {menu.title}{' '}
+                    {menu.title}
                 </Link>
             </li>
         );
